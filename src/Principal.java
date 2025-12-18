@@ -9,9 +9,9 @@ public class Principal {
         miPelicula.muestraFichaTecnica();
         miPelicula.evalua(10);
         miPelicula.evalua(10);
-        System.out.println(miPelicula.sumaDeLasEvaluaciones);
-        System.out.println(miPelicula.totalEvaluaciones);
+        System.out.println(miPelicula.getTotalEvaluaciones());
         System.out.println(miPelicula.calculaMedia());
+
 
 
 
@@ -23,10 +23,10 @@ public class Principal {
         otraPelicula.evalua(5);
         otraPelicula.evalua(10);
         otraPelicula.evalua(10);
-        
-        System.out.println(otraPelicula.sumaDeLasEvaluaciones);
-        System.out.println(otraPelicula.totalEvaluaciones);
-        System.out.println(otraPelicula.calculaMedia());
+
+//        System.out.println(otraPelicula.sumaDeLasEvaluaciones);
+//        System.out.println(otraPelicula.totalEvaluaciones);
+//        System.out.println(otraPelicula.calculaMedia());
 
 //       otraPelicula.muestraFichaTecnica();
 
