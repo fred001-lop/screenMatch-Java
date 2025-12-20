@@ -1,4 +1,6 @@
 import com.aluracursos.screenmatch.calculos.CalculadoraDeTiempo;
+import com.aluracursos.screenmatch.calculos.FiltroRecomendacion;
+import com.aluracursos.screenmatch.modelos.Episodio;
 import com.aluracursos.screenmatch.modelos.Pelicula;
 import com.aluracursos.screenmatch.modelos.Serie;
 
@@ -44,8 +46,15 @@ public class Principal {
         System.out.println("Tiempo necesario para ver tus titulos favoritos en estas vacaciones: " +calculadora.getTiempoTotal() + " minutos");
 
 
+        FiltroRecomendacion filtroRecomendacion = new FiltroRecomendacion();
+        filtroRecomendacion.filtro(miPelicula);
 
-
+        Episodio episodio = new Episodio();
+        episodio.setNumeroEpisodio(1);
+        episodio.setNombre("La casa de papel");
+        episodio.setSerie(casaDragon);
+        episodio.setTotalVisualizaciones(50);
+        filtroRecomendacion.filtro(episodio);
 
 
 
