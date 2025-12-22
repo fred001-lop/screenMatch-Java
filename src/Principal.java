@@ -4,6 +4,9 @@ import com.aluracursos.screenmatch.modelos.Episodio;
 import com.aluracursos.screenmatch.modelos.Pelicula;
 import com.aluracursos.screenmatch.modelos.Serie;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Principal {
     public static void main(String[] args) {
 
@@ -57,9 +60,19 @@ public class Principal {
         filtroRecomendacion.filtro(episodio);
 
 
+        //PELICULA NUEVA
+        var peliculaNew = new Pelicula();
+        peliculaNew.setNombre("El conjuro");
+        peliculaNew.setDuracion(120);
+        peliculaNew.setFechaLanzamiento(2000);
 
+        ArrayList<Pelicula> listaPeliculas = new ArrayList<>();
+        listaPeliculas.add(miPelicula);
+        listaPeliculas.add(otraPelicula);
+        listaPeliculas.add(peliculaNew);
 
-
+        System.out.println("Tamano de la lista: " + listaPeliculas.size());
+        System.out.println("La primera pelicula es: " + listaPeliculas.get(0).getNombre());
 
 
 
