@@ -10,8 +10,7 @@ import java.util.List;
 public class Principal {
     public static void main(String[] args) {
 
-        Pelicula miPelicula = new Pelicula();
-        miPelicula.setNombre("Fast and Furios");
+        Pelicula miPelicula = new Pelicula("Fast and Furios");
         miPelicula.setFechaLanzamiento(2001);
         miPelicula.setDuracion(120);
         miPelicula.setIncluidoEnElPlan(true);
@@ -36,8 +35,7 @@ public class Principal {
         casaDragon.muestraFichaTecnica();
         System.out.println("Duracion de la serie "+ casaDragon.getDuracion());
 
-        Pelicula otraPelicula = new Pelicula();
-        otraPelicula.setNombre("Matrix");
+        Pelicula otraPelicula = new Pelicula("Matrix");
         otraPelicula.setFechaLanzamiento(1998);
         otraPelicula.setDuracion(180);
 
@@ -61,8 +59,8 @@ public class Principal {
 
 
         //PELICULA NUEVA
-        var peliculaNew = new Pelicula();
-        peliculaNew.setNombre("El conjuro");
+        var peliculaNew = new Pelicula("El conjuro");
+
         peliculaNew.setDuracion(120);
         peliculaNew.setFechaLanzamiento(2000);
 
