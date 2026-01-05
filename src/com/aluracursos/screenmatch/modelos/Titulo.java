@@ -8,6 +8,15 @@ public class Titulo {
     private double sumaDeLasEvaluaciones;
     private int totalEvaluaciones;
 
+
+    //CREACION DE CONSTRUCTOR
+
+
+    public Titulo(String nombre, int fechaLanzamiento) {
+        this.nombre = nombre;
+        this.fechaLanzamiento = fechaLanzamiento;
+    }
+
     public String getNombre() {
         return nombre;
     }
