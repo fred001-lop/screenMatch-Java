@@ -12,7 +12,7 @@ public class Principal {
     public static void main(String[] args) {
 
         Pelicula miPelicula = new Pelicula("Fast and Furios", 1999 );
-//        miPelicula.setFechaLanzamiento(2001);
+//      miPelicula.setFechaLanzamiento(2001);
         miPelicula.setDuracion(120);
         miPelicula.setIncluidoEnElPlan(true);
 

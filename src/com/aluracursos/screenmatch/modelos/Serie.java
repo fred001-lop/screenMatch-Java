@@ -38,4 +38,9 @@ package com.aluracursos.screenmatch.modelos;
     public void setMinutosPorEpisodio(int minutosPorEpisodio) {
         this.minutosPorEpisodio = minutosPorEpisodio;
     }
-}
+
+        @Override
+        public String toString() {
+            return "Serie: " + this.getNombre() + "("+this.getFechaLanzamiento()+")";
+        }
+    }
